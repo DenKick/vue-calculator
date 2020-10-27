@@ -1,0 +1,75 @@
+#app {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 20px auto;
+  box-shadow: 2px 2px 6px #21212150;
+  width: 250px;
+}
+
+input, button {
+  background-color: #fafafa;
+  border: 0;
+  font-size: 20px;
+}
+
+input {
+  margin: 15px 33px;
+}
+
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .1s ease-in;
+  height: 50px;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+}
+
+button:focus {
+  outline: none;
+}
+
+.numbers, .operations, .controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.operations, .controls {
+  background-color: #212121;
+}
+
+.numbers > button {
+  width: 33%;
+}
+
+.numbers > button:last-child {
+  flex-basis: 100%;
+}
+
+.operations > button, .controls > button {
+  background-color: #212121;
+  border-radius: 5px;
+  color: #fafafa;
+}
+
+.operations > button {
+  width: 25%;
+}
+
+.operations > button:hover, .controls > button:hover {
+  background-color: #313131;
+}
+
+.controls {
+  border-radius: 0 0 5px 5px;
+}
+
+.controls > button {
+  width: 50%;
+}
